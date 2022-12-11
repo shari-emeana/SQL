@@ -1,0 +1,17 @@
+CREATE TABLE Favorite_Books (id INTEGER PRIMARY KEY, name TEXT, rank INTEGER);
+
+INSERT INTO Favorite_books VALUES(111, "The Laws of Human Nature", 2);
+INSERT INTO Favorite_books VALUES(121, "Your Next Five Moves", 1);
+INSERT INTO Favorite_books VALUES(131, "The Magic of Thinking Big", 4);
+INSERT INTO Favorite_books VALUES(141, "The Compound Effect", 3);
+INSERT INTO Favorite_books VALUES(151, "Your Invisible Power", 5);
+SELECT * FROM Favorite_Books
+
+--display the database ordered by rank.
+SELECT * FROM Favorite_books
+ORDER BY rank;
+
+--display the database by top 3 favorite books
+SELECT * FROM Favorite_books 
+ORDER BY rank
+LIMIT 3;
